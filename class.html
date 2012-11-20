@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="javascript/libs/themes/SimpleBlue.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+<title>Main</title>
+</head>
+
+<body>
+    <!-- Start of 6th page -->
+    <div data-role="page" id="class">
+    
+        <div data-role="header">
+	      <a href="index.html" data-icon="check" class="ui-btn-right" data-theme="c">Save</a>
+          <h1>Class Name</h1>
+          
+        </div><!-- /header -->
+        
+        <div data-role="content"> 
+            <div id="details" style="padding-left:15%; padding-right:15%; padding-top:2%; padding-bottom:2%">
+                <input id="className" name="className" type="text" title="Class Name"/>
+                <script type="text/javascript"> 
+                $$hint($('#className')); 
+                </script>
+    
+                <h3>Visibility</h3>
+                <fieldset data-role="controlgroup">
+                        <label for="radio-choice-21">
+                            <input type="radio" name="radio-choice-2" id="radio-choice-21" value="choice-1" checked="checked" />
+                            Public
+                        </label>
+            
+                        <label for="radio-choice-22">
+                            <input type="radio" name="radio-choice-2" id="radio-choice-22" value="choice-2"  />
+                            Default
+                        </label>
+                </fieldset>
+
+                <h3>Modifiers</h3>
+                <fieldset data-role="controlgroup">
+                    <label><input type="checkbox" name="isStatic" /> Is Abstract </label>
+                    <label><input type="checkbox" name="isFinal" /> Is Final </label>
+                </fieldset>
+                
+                <h3>Other</h3>
+                <fieldset data-role="controlgroup">
+                    <label><input type="checkbox" name="generateComments" /> Auto generate comments </label>
+                    <label><input type="checkbox" name="constructor" /> Create constructors from super class </label>
+                    <label><input type="checkbox" name="main" /> Create a main method </label>
+                </fieldset>
+           	</div> 
+            
+            <div id="relationships" class="invisibleFragment" style="padding-left:15%; padding-right:15%; padding-top:2%; padding-bottom:2%">
+            	<h3>Extends</h3>
+                <input id="extends" name="extends" type="text" title="Superclass"/>
+                <script type="text/javascript"> 
+                $$hint($('#extends')); 
+                </script>
+                <h3>Implements</h3>
+                <div id="interfaces" class="ui-input-text ui-corner-all ui-shadow-inset ui-body-c">
+                	<span id="interfaceName1" class="interface">
+                    	<a href="" class="interface ui-state-persist ui-btn ui-btn-inline ui-btn-hover-a ui-btn-up-a" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a" data-inline="true">
+                            <span class="ui-btn-inner interfaceInner">
+                                <span class="ui-btn-text">ClassDetails</span>
+                                <img src="images/delete_blue.png" height="13" width="13" class="deleteInterfaceButton"/>
+                            </span>
+                        </a>
+                    </span>
+                    
+                    <span id="interfaceName2" class="interface">
+                    	<a href="" class="interface ui-state-persist ui-btn ui-btn-inline ui-btn-hover-a ui-btn-up-a" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a" data-inline="true">
+                            <span class="ui-btn-inner interfaceInner">
+                                <span class="ui-btn-text">ItemAttribute</span>
+                                <img src="images/delete_blue.png" height="13" width="13" class="deleteInterfaceButton"/>
+                            </span>
+                        </a>
+                    </span>
+                    
+                    <span id="interfaceName2" class="interface">
+                    	<a href="" class="interface ui-state-persist ui-btn ui-btn-inline ui-btn-hover-a ui-btn-up-a" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a" data-inline="true">
+                            <span class="ui-btn-inner interfaceInner">
+                                <span class="ui-btn-text">CoreItem</span>
+                                <img src="images/delete_blue.png" height="13" width="13" class="deleteInterfaceButton"/>
+                            </span>
+                        </a>
+                    </span>
+                    
+                    <span id="interfaceName2" class="interface">
+                    	<a href="" class="interface ui-state-persist ui-btn ui-btn-inline ui-btn-hover-a ui-btn-up-a" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a" data-inline="true">
+                            <span class="ui-btn-inner interfaceInner">
+                                <span class="ui-btn-text">Assignment</span>
+                                <img src="images/delete_blue.png" height="13" width="13" class="deleteInterfaceButton"/>
+                            </span>
+                        </a>
+                    </span>
+                    
+                    <span id="interfaceName2" class="interface">
+                    	<a href="" class="interface ui-state-persist ui-btn ui-btn-inline ui-btn-hover-a ui-btn-up-a" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a" data-inline="true">
+                            <span class="ui-btn-inner interfaceInner">
+                                <span class="ui-btn-text">Message</span>
+                                <img src="images/delete_blue.png" height="13" width="13" class="deleteInterfaceButton"/>
+                            </span>
+                        </a>
+                    </span>
+                    
+                    <span id="interfaceName2" class="interface">
+                    	<a href="" class="interface ui-state-persist ui-btn ui-btn-inline ui-btn-hover-a ui-btn-up-a" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a" data-inline="true">
+                            <span class="ui-btn-inner interfaceInner">
+                                <span class="ui-btn-text">BigInterface</span>
+                                <img src="images/delete_blue.png" height="13" width="13" class="deleteInterfaceButton"/>
+                            </span>
+                        </a>
+                    </span>
+                </div>
+                <!--<textarea id="interfaces" name="interfaces" title="Interfaces" style="height:400px"></textarea>
+                <script type="text/javascript"> 
+                $$hint($('#interfaces')); 
+                </script>-->
+            </div>
+            
+            <div id="methods" class="invisibleFragment">
+            	<ul data-role="listview">
+                    <li><a href="acura.html">Method Name</a></li>
+                    <li><a href="audi.html">Audi</a></li>
+                    <li><a href="bmw.html">BMW</a></li>
+                </ul>
+            </div>
+            
+            <div id="members" class="invisibleFragment">
+            	<ul data-role="listview">
+                    <li><a href="acura.html">Member Name</a></li>
+                    <li><a href="audi.html">Audi</a></li>
+                    <li><a href="bmw.html">BMW</a></li>
+                </ul>
+            </div>
+            
+        </div><!-- /content -->
+    
+    	<div data-role="footer" data-id="foo1" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                	<li><a href="#" onclick="showFragment('#details')" class="ui-btn-active ui-state-persist">Class Details</a></li>
+                    <li><a href="#" onclick="showFragment('#relationships')">Class Relationships</a></li>
+                    <li><a href="#" onclick="showFragment('#methods')">Methods</a></li>
+                    <li><a href="#" onclick="showFragment('#members')">Members</a></li>
+                </ul>
+                <script type="text/javascript">
+					showFragment('#details');
+				</script>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+    	
+    </div><!-- /page -->
+	
+</body>
+</html>

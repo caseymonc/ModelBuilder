@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+#interfaces{
+	height:300px;
+	padding:4px;
+}
+
+.interface{
+	padding:0px;
+	border-radius: .6em;
+}
+
+.interfaceInner{
+	padding:.6em 15px;
+	font-size:12px;
+}
+
+.deleteInterfaceButton{
+	margin-left:10px;
+}

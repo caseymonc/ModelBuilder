@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  min-width: 550px;      /* 2x LC width + RC width */
+  background:#999
+}
+#container {
+  padding-left: 300px;   /* LC width */
+}
+#container .column {
+  position: relative;
+  float: left;
+}
+#center {
+  width: 100%;
+}
+#left {
+  width: 300px;          /* LC width */
+  right: 200px;          /* LC width */
+  margin-left: -100%;
+  background-color:#999
+}
+#right {
+  width: 150px;          /* RC width */
+  margin-right: -150px;  /* RC width */
+}
+#footer {
+  clear: both;
+}
+/*** IE6 Fix ***/
+* html #left {
+  left: 150px;           /* RC width */
+}

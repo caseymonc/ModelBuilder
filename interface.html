@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="javascript/libs/themes/SimpleBlue.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+<title>Interface</title>
+</head>
+
+<body>
+    <!-- Start of 6th page -->
+    <div data-role="page" id="interface">
+    
+        <div data-role="header">
+	      <a href="index.html" data-icon="check" class="ui-btn-right" data-theme="c">Save</a>
+          <h1>Interface Name</h1>
+          
+        </div><!-- /header -->
+        
+        <div data-role="content"> 
+            <div id="details" style="padding-left:15%; padding-right:15%; padding-top:2%; padding-bottom:2%">
+                <h3>Interface Name</h3>
+                <input id="className" name="className" type="text" title="Interface Name"/>
+                <script type="text/javascript"> 
+                $$hint($('#className')); 
+                </script>
+    
+    			<h3>Extends</h3>
+                <input id="extends" name="extends" type="text" title="Superclass"/>
+                <script type="text/javascript"> 
+                $$hint($('#extends')); 
+                </script>
+
+           	</div>
+            
+            <div id="methods" class="invisibleFragment">
+            	<ul data-role="listview">
+                    <li><a href="acura.html">Method Name</a></li>
+                    <li><a href="audi.html">Audi</a></li>
+                    <li><a href="bmw.html">BMW</a></li>
+                </ul>
+            </div>
+            
+        </div><!-- /content -->
+    
+    	<div data-role="footer" data-id="foo1" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                	<li><a href="#" onclick="showFragment('#details')" class="ui-btn-active ui-state-persist">Interface Details</a></li>
+                    <li><a href="#" onclick="showFragment('#methods')">Methods</a></li>
+                </ul>
+                <script type="text/javascript">
+					showFragment('#details');
+				</script>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+    	
+    </div><!-- /page -->
+	
+</body>
+</html>
